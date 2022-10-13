@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg2" viewBox="0 0 179.2 179.21" version="1.1">
+  <title id="title3067">More sticker</title>
+  <defs id="defs4">
+    <filter id="filter4516" color-interpolation-filters="sRGB">
+      <feGaussianBlur id="feGaussianBlur4518" stdDeviation="4.0000967"/>
+    </filter>
+    <radialGradient id="radialGradient4334" gradientUnits="userSpaceOnUse" cy="279.54" cx="519.8" gradientTransform="matrix(1.3029 -.027973 .027162 1.2651 -145.03 160.42)" r="80">
+      <stop id="stop4038" stop-color="#78f001" offset="0"/>
+      <stop id="stop4040" stop-color="#439800" offset="1"/>
+    </radialGradient>
+    <filter id="filter4134" color-interpolation-filters="sRGB">
+      <feGaussianBlur id="feGaussianBlur4136" stdDeviation="2.1250967"/>
+    </filter>
+    <linearGradient id="linearGradient4325" y2="277.36" gradientUnits="userSpaceOnUse" x2="585" gradientTransform="translate(20 219.99)" y1="294.36" x1="568">
+      <stop id="stop4062" stop-color="#8c8c8c" offset="0"/>
+      <stop id="stop4108" stop-color="#e6e6e6" offset=".71"/>
+      <stop id="stop4064" stop-color="#8c8c8c" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient4507" y2="287.97" gradientUnits="userSpaceOnUse" y1="304.43" gradientTransform="translate(0,200)" x2="596.25" x1="578.96">
+      <stop id="stop4504" stop-color="#fff" offset="0"/>
+      <stop id="stop4506" stop-color="#464646" offset="1"/>
+    </linearGradient>
+  </defs>
+  <g id="layer1" transform="translate(-270.4 -505.62)">
+    <g id="g4381" transform="translate(-200 62.861)">
+      <path id="path4520" opacity=".2" filter="url(#filter4516)" d="m557.94 452.36c-43.228 1.0952-77.938 36.508-77.938 80 0 44.183 35.817 80 80 80s80-35.817 80-80l-80-80c-0.69036 0-1.3763-0.0174-2.0625 0z"/>
+      <path id="path4522" d="m557.94 452.36c-43.228 1.0952-77.938 36.508-77.938 80 0 44.183 35.817 80 80 80s80-35.817 80-80l-80-80c-0.69036 0-1.3763-0.0174-2.0625 0z" fill="url(#radialGradient4334)"/>
+      <g id="flowRoot4524" fill="#fff" transform="matrix(.98237 -.18697 .18697 .98237 -5.9435 321.16)">
+        <path id="path4558" d="m477.25 296.46c0.47999 0.88002 1.0267 1.9734 1.64 3.28 0.63999 1.28 1.2933 2.68 1.96 4.2 0.69332 1.4934 1.3733 3.0267 2.04 4.6 0.66665 1.5733 1.2933 3.0533 1.88 4.44 0.58665-1.3867 1.2133-2.8667 1.88-4.44 0.66665-1.5733 1.3333-3.1066 2-4.6 0.69331-1.52 1.3466-2.92 1.96-4.2 0.63998-1.3066 1.2-2.4 1.68-3.28h5.68c0.26664 1.84 0.50663 3.9067 0.72 6.2 0.23997 2.2667 0.43997 4.64 0.6 7.12 0.18663 2.4533 0.34663 4.92 0.48 7.4 0.15997 2.48 0.2933 4.8133 0.4 7h-6.08c-0.08-2.6933-0.18669-5.6267-0.32-8.8-0.13336-3.1733-0.33336-6.3733-0.6-9.6-0.48003 1.12-1.0134 2.36-1.6 3.72-0.58669 1.36-1.1734 2.72-1.76 4.08-0.56002 1.36-1.1067 2.6667-1.64 3.92-0.53335 1.2267-0.98669 2.28-1.36 3.16h-4.36c-0.37335-0.88-0.82668-1.9333-1.36-3.16-0.53335-1.2533-1.0934-2.56-1.68-3.92-0.56001-1.36-1.1333-2.72-1.72-4.08-0.58668-1.36-1.12-2.6-1.6-3.72-0.26668 3.2267-0.46668 6.4267-0.6 9.6-0.13334 3.1733-0.24001 6.1067-0.32 8.8h-6.08c0.10666-2.1867 0.22666-4.52 0.36-7 0.16-2.48 0.32-4.9467 0.48-7.4 0.18666-2.48 0.38666-4.8533 0.6-7.12 0.24-2.2933 0.49333-4.36 0.76-6.2h5.96"/>
+        <path id="path4560" d="m525.03 313.62c-0.00003 1.6533-0.24003 3.1733-0.72001 4.56-0.48002 1.36-1.1734 2.5333-2.08 3.52-0.90668 0.96-2 1.7067-3.28 2.24-1.2533 0.53333-2.6667 0.8-4.24 0.8-1.5467 0-2.96-0.26667-4.24-0.8-1.2534-0.53334-2.3333-1.28-3.24-2.24-0.90667-0.98667-1.6133-2.16-2.12-3.52-0.50666-1.3867-0.76-2.9067-0.76-4.56s0.25334-3.16 0.76-4.52c0.53334-1.36 1.2533-2.52 2.16-3.48 0.93332-0.95998 2.0266-1.7066 3.28-2.24 1.28-0.53332 2.6667-0.79998 4.16-0.8 1.52 0.00002 2.9067 0.26668 4.16 0.8 1.28 0.53335 2.3733 1.28 3.28 2.24 0.90664 0.96001 1.6133 2.12 2.12 3.48 0.50664 1.36 0.75997 2.8667 0.76 4.52m-6.08 0c-0.00001-1.84-0.37334-3.28-1.12-4.32-0.72001-1.0666-1.76-1.6-3.12-1.6-1.36 0.00001-2.4133 0.53335-3.16 1.6-0.74667 1.04-1.12 2.48-1.12 4.32s0.37333 3.3067 1.12 4.4c0.74666 1.0667 1.8 1.6 3.16 1.6s2.4-0.53333 3.12-1.6c0.74666-1.0933 1.12-2.56 1.12-4.4"/>
+        <path id="path4562" d="m542.32 308.42c-0.53335-0.13332-1.16-0.26665-1.88-0.4-0.72001-0.15999-1.4934-0.23999-2.32-0.24-0.37334 0.00001-0.82668 0.04-1.36 0.12-0.50668 0.0533-0.89334 0.12001-1.16 0.2v16.08h-5.96v-19.92c1.0667-0.37332 2.32-0.71998 3.76-1.04 1.4667-0.34665 3.0933-0.51998 4.88-0.52 0.31999 0.00002 0.70665 0.0267 1.16 0.08 0.45332 0.0267 0.90665 0.08 1.36 0.16 0.45332 0.0534 0.90665 0.13335 1.36 0.24 0.45332 0.08 0.83998 0.18668 1.16 0.32l-1 4.92"/>
+        <path id="path4564" d="m545.13 313.82c0-1.8667 0.28-3.4933 0.84-4.88 0.58667-1.4133 1.3467-2.5866 2.28-3.52 0.93333-0.93332 2-1.64 3.2-2.12 1.2267-0.47998 2.48-0.71998 3.76-0.72 2.9867 0.00002 5.3466 0.92002 7.08 2.76 1.7333 1.8134 2.6 4.4933 2.6 8.04-0.00002 0.34667-0.0133 0.73334-0.04 1.16-0.0267 0.40001-0.0534 0.76-0.08 1.08h-13.52c0.13333 1.2267 0.70666 2.2 1.72 2.92s2.3733 1.08 4.08 1.08c1.0933 0 2.16-0.0933 3.2-0.28 1.0666-0.21333 1.9333-0.46667 2.6-0.76l0.80001 4.84c-0.32002 0.16-0.74669 0.32-1.28 0.48-0.53335 0.16-1.1334 0.29333-1.8 0.4-0.64001 0.13333-1.3333 0.24-2.08 0.32-0.74668 0.08-1.4933 0.12-2.24 0.12-1.8933 0-3.5467-0.28-4.96-0.84-1.3867-0.56-2.5467-1.32-3.48-2.28-0.90668-0.98667-1.5867-2.1467-2.04-3.48-0.42667-1.3333-0.64001-2.7733-0.64001-4.32m14-2.28c-0.0267-0.50666-0.12001-0.99999-0.28-1.48-0.13334-0.47999-0.36001-0.90666-0.67999-1.28-0.29335-0.37332-0.68002-0.67999-1.16-0.92-0.45334-0.23999-1.0267-0.35999-1.72-0.36-0.66668 0.00001-1.24 0.12001-1.72 0.36-0.48 0.21335-0.88 0.50668-1.2 0.88-0.32 0.37334-0.57334 0.81334-0.76 1.32-0.16 0.48001-0.28 0.97334-0.36 1.48h7.88"/>
+      </g>
+      <path id="path4532" opacity=".2" filter="url(#filter4134)" d="m557.94 452.36c-0.98163 0.0249-1.965 0.065-2.9375 0.125v4.875c0 44.183 35.817 80 80 80h4.8438c0.10185-1.6526 0.15625-3.3217 0.15625-5l-80-80c-0.69036 0-1.3763-0.0174-2.0625 0z"/>
+      <path id="path4534" fill="url(#linearGradient4325)" d="m640 532.35-80-80c0 44.183 35.817 80 80 80z"/>
+      <path id="path4536" d="m560 452.34c0 44.183 35.817 80 80 80l-1.8125-1.8125c-41.131-1.9406-74.12-34.933-76.062-76.062l-2.125-2.125z" fill="url(#linearGradient4507)"/>
+    </g>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>More sticker</dc:title>
+        <dc:date>2011-05-27T09:40:31</dc:date>
+        <dc:description>A green sticker with the text 'More' on it. The upper right corner is peeled back. Created in Inkscape 0.48 under Linux Mint Debian.</dc:description>
+        <dc:source>http://openclipart.org/detail/140623/more-sticker-by-easy</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>easy</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>Button</rdf:li>
+            <rdf:li>Green</rdf:li>
+            <rdf:li>Icon</rdf:li>
+            <rdf:li>More</rdf:li>
+            <rdf:li>Peel</rdf:li>
+            <rdf:li>Spot</rdf:li>
+            <rdf:li>Sticker</rdf:li>
+            <rdf:li>Sticky</rdf:li>
+            <rdf:li>Web</rdf:li>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
