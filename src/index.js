@@ -5,6 +5,7 @@ import "bootstrap/dist/js/bootstrap.bundle.js";
 import "./style.css";
 import Myabout,{Mypage, Page3} from './About';
 import Mybootstrap from './Mybootstrap';
+import Page from './Page';
 
 
 
@@ -15,6 +16,7 @@ root.render(
     <Mypage></Mypage>
     <Page3></Page3>
     <Mybootstrap/>
+    <Page></Page>
   </React.StrictMode> 
 );
 
