@@ -6,6 +6,7 @@ import "./style.css";
 import Myabout,{Mypage, Page3} from './About';
 import Mybootstrap from './Mybootstrap';
 import Page from './Page';
+import Mypage20 from './Mypage';
 
 
 
@@ -17,6 +18,7 @@ root.render(
     <Page3></Page3>
     <Mybootstrap/>
     <Page></Page>
+    <Mypage20/>
   </React.StrictMode> 
 );
 
