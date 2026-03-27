@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import { Link } from 'react-router-dom';
 
 function Mypage20() {
 
@@ -25,6 +26,8 @@ function Mypage20() {
         <input type='button' value="run func" onClick={third}/>
         <h3>user  name : {x.name}</h3>
         <h3>user  age : {x.age>=40? "old":"new"}</h3>
+        <Link to="/">Home page</Link>
+
     </div>
   )
 }
