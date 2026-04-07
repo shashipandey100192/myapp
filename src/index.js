@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import UserLogin from './applications/modules/users/userauth/UserLogin';
 import Apperror from './applications/sharecomponents/Apperror';
 import Masterpage from './applications/modules/dashboard/Masterpage';
+import UserRegistor from './applications/modules/users/userauth/UserRegistor';
 
 
 
@@ -17,8 +18,11 @@ root.render(
     <BrowserRouter>
         <Routes>
             <Route path='' element={<UserLogin/>}></Route>
-              <Route path='dashboard' element={<Masterpage/>}></Route>
-
+              <Route path='dashboard' element={<Masterpage/>}>
+                
+              
+              </Route>
+              <Route path='registor' element={<UserRegistor/>}></Route>
             <Route path='*' element={<Apperror/>}></Route>
 
 
