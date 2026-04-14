@@ -5,10 +5,17 @@ import Appfooter from '../../sharecomponents/Appfooter'
 import Landingpage from './Landingpage'
 
 function Masterpage() {
-  return (
 
+    const username="ravi singh";
+    const user = {name:"pankaj",role:"admin"}
+    const message = ()=>{
+        alert("welcome to func");
+    }
+
+
+  return (
 <Fragment>
-    <Appheader></Appheader>
+    <Appheader xyz={username} menu={user} myfunc={message}></Appheader>
    <div className='container-fluid'>
     <div className='row'>
         <div className='col-md-2'>
