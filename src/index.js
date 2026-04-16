@@ -8,6 +8,8 @@ import UserLogin from './applications/modules/users/userauth/UserLogin';
 import Apperror from './applications/sharecomponents/Apperror';
 import Masterpage from './applications/modules/dashboard/Masterpage';
 import UserRegistor from './applications/modules/users/userauth/UserRegistor';
+import Landingpage from './applications/modules/dashboard/Landingpage';
+import UserDashboard from './applications/modules/users/userdashboard/UserDashboard';
 
 
 
@@ -19,8 +21,11 @@ root.render(
         <Routes>
             <Route path='' element={<UserLogin/>}></Route>
               <Route path='dashboard' element={<Masterpage/>}>
+                <Route path='' element={<Landingpage/>}></Route>
+                <Route path='employeepage' element={<UserDashboard/>}></Route>
+                <Route path='' element={<Landingpage/>}></Route>
                 
-              
+              <Route path='*' element={<Apperror/>}></Route>
               </Route>
               <Route path='registor' element={<UserRegistor/>}></Route>
             <Route path='*' element={<Apperror/>}></Route>

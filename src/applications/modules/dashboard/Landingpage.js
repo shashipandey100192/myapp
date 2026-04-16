@@ -1,6 +1,19 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 function Landingpage() {
+   const abc = JSON.parse(localStorage.getItem("mydata"));
+
+const [locald,updatedata]=useState({})
+const mylocadata = ()=>{
+ updatedata(JSON.parse(localStorage.getItem("mydata")));
+}
+
+useEffect(()=>{
+  mylocadata();
+},[]);
+
+
+
   return (
     <div className='container-fluid'>
       <div className='row'>
@@ -31,8 +44,8 @@ function Landingpage() {
         <div className='col'>
           <div class="card shadow bg-warning text-white">
               <div class="card-body">
-                <h5 class="card-title">Total Employee</h5>
-                <h1>57800</h1>
+                <h5 class="card-title">local storage</h5>
+                <p>{abc.email}</p>
               </div>
           </div>
         </div>
@@ -40,7 +53,7 @@ function Landingpage() {
           <div class="card shadow bg-danger text-white">
               <div class="card-body">
                 <h5 class="card-title">Total Employee</h5>
-                <h1>57800</h1>
+                {locald.email}
               </div>
           </div>
         </div>

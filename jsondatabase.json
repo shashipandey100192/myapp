@@ -1,0 +1,28 @@
+{
+  "employee": [
+    {
+      "email": "shashiweb64@gmail.com",
+      "fullname": "shashi web",
+      "dob": "2026-04-15",
+      "gender": "Male",
+      "phone": "6666666",
+      "course": "Mern",
+      "password": "123$1asd",
+      "profile": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX4Fx48oWJFcvyBU_0lfu0rdzLtNjpci5phQ&s",
+      "id": "HXbaGzYHzrQ"
+    },
+    {
+      "email": "ravi@gmail.com",
+      "fullname": "ravi",
+      "dob": "2026-04-14",
+      "gender": "Male",
+      "phone": "66666669999",
+      "course": "Express",
+      "password": "123$1asd",
+      "profile": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX4Fx48oWJFcvyBU_0lfu0rdzLtNjpci5phQ&s",
+      "id": "_ZE8QLlNsLA"
+    }
+  ],
+  "user": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}

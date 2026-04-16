@@ -4,6 +4,7 @@ import { RiLockPasswordLine } from "react-icons/ri";
 import { Link, useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { ToastContainer,toast } from 'react-toastify';
+import axios from 'axios';
 
 
 function UserRegistor() {
@@ -13,6 +14,10 @@ const {register,handleSubmit,formState: { errors }} = useForm()
 const mysubmit = (e)=>
 {
   console.log(e);
+  localStorage.setItem("mydata",JSON.stringify(e));
+  axios.post("http://localhost:8500/employee",e).then((r)=>{
+    console.log(r);
+  })
   toast.success("successfully registor user",{autoClose:2000,theme:"dark",position:'top-left'});
   setTimeout(()=>{
     mynav("/")

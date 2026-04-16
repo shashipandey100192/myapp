@@ -3,6 +3,7 @@ import Appheader from '../../sharecomponents/Appheader'
 import Appsidebar from '../../sharecomponents/Appsidebar'
 import Appfooter from '../../sharecomponents/Appfooter'
 import Landingpage from './Landingpage'
+import { Outlet } from 'react-router-dom'
 
 function Masterpage() {
 
@@ -21,8 +22,8 @@ function Masterpage() {
         <div className='col-md-2'>
             <Appsidebar></Appsidebar>
         </div>
-        <div className='col-md-10 cus-h border'>
-            <Landingpage></Landingpage>
+        <div className='col-md-10 cus-h border g-0'>
+            <Outlet></Outlet>
 
         </div>
     </div>
