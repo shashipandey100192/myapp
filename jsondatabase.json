@@ -21,6 +21,17 @@
       "password": "123$1asd",
       "profile": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX4Fx48oWJFcvyBU_0lfu0rdzLtNjpci5phQ&s",
       "id": "_ZE8QLlNsLA"
+    },
+    {
+      "email": "afrida@gmail.com",
+      "fullname": "afrida",
+      "dob": "2026-04-06",
+      "gender": "Male",
+      "phone": "987456321",
+      "course": "Angular",
+      "password": "123@asd",
+      "profile": "https://static.vecteezy.com/system/resources/thumbnails/000/439/863/small/Basic_Ui__28186_29.jpg",
+      "id": "4BkSoYB1_BY"
     }
   ],
   "user": [],
