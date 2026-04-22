@@ -32,6 +32,17 @@
       "password": "123@asd",
       "profile": "https://static.vecteezy.com/system/resources/thumbnails/000/439/863/small/Basic_Ui__28186_29.jpg",
       "id": "4BkSoYB1_BY"
+    },
+    {
+      "email": "shashiweb64@gmail.com",
+      "fullname": "shashi web",
+      "dob": "2026-04-14",
+      "gender": "Male",
+      "phone": "6666666",
+      "course": "Angular",
+      "password": "123@qwe",
+      "profile": "https://cdn-icons-png.flaticon.com/512/219/219969.png",
+      "id": "q7VMgCGFc4I"
     }
   ],
   "user": [],

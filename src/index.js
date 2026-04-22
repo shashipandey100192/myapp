@@ -10,6 +10,8 @@ import Masterpage from './applications/modules/dashboard/Masterpage';
 import UserRegistor from './applications/modules/users/userauth/UserRegistor';
 import Landingpage from './applications/modules/dashboard/Landingpage';
 import UserDashboard from './applications/modules/users/userdashboard/UserDashboard';
+import Productpage from './applications/modules/dashboard/Productpage';
+import Productdetailspage from './applications/modules/dashboard/Productdetailspage';
 
 
 
@@ -24,6 +26,8 @@ root.render(
                 <Route path='' element={<Landingpage/>}></Route>
                 <Route path='employeepage' element={<UserDashboard/>}></Route>
                 <Route path='' element={<Landingpage/>}></Route>
+                <Route path='productlist' element={<Productpage/>}></Route>
+                <Route path='productlist/userpage/:id' element={<Productdetailspage/>}></Route>
                 
               <Route path='*' element={<Apperror/>}></Route>
               </Route>

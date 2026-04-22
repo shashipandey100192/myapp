@@ -3,6 +3,7 @@ import { IoIosSearch } from "react-icons/io";
 import { FaTableCellsLarge } from "react-icons/fa6";
 import { FaListUl } from "react-icons/fa";
 import { FaAddressCard } from "react-icons/fa";
+import { CiRead } from "react-icons/ci";
 import axios from 'axios';
 
 function UserDashboard() {
@@ -65,8 +66,14 @@ useEffect(()=>{
                 <td>{u.phone}</td>
                 <td>{u.gender}</td>
                 <td>{u.course}</td>
-                <td></td>
-                <td>@mdo</td>
+                <td>
+                  <img src={u.profile} alt='dfhdfg' width="30"/>
+                </td>
+                <td>
+                  <button className='btn btn-primary btn-sm'><CiRead/></button>
+                  <button className='btn btn-warning btn-sm'><CiRead/></button>
+                  <button className='btn btn-danger btn-sm'><CiRead/></button>
+                </td>
               </tr>
               )
             })}
