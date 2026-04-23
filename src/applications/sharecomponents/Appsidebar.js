@@ -11,6 +11,7 @@ function Appsidebar() {
        <li><Link to="graphpage" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Graph</Link></li>
        <li><Link to="employeepage" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Employee</Link></li>
        <li><Link to="productlist" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Product</Link></li>
+       <li><Link to="lazypage" class="link-body-emphasis d-inline-flex text-decoration-none rounded">lazyloading</Link></li>
         </ul> </div> </li> <li class="mb-1"> <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
       Dashboard
     </button> <div class="collapse" id="dashboard-collapse"> <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"> <li><Link to="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Overview</Link></li> <li><Link to="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Weekly</Link></li> <li><Link to="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Monthly</Link></li> <li><Link to="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Annually</Link></li> </ul> </div> </li> <li class="mb-1"> <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
