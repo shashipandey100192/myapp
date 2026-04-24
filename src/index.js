@@ -14,6 +14,7 @@ import UserDashboard from './applications/modules/users/userdashboard/UserDashbo
 
 import Productdetailspage from './applications/modules/dashboard/Productdetailspage';
 import Mygraphpage from './applications/modules/dashboard/Mygraphpage';
+import Paginationpage from './applications/modules/dashboard/Paginationpage';
 const Productpage = lazy(()=>import('./applications/modules/dashboard/Productpage'));
 // import Lazypage from './applications/modules/dashboard/Lazypage';
 const Lazypage = lazy(()=>import('./applications/modules/dashboard/Lazypage'));
@@ -42,7 +43,7 @@ root.render(
                     <Lazypage/>
                 </Suspense>}></Route>
                 <Route path='graphpage' element={<Mygraphpage/>}></Route>
-                
+                <Route path='pagination' element={<Paginationpage/>}></Route>
               <Route path='*' element={<Apperror/>}></Route>
               </Route>
               <Route path='registor' element={<UserRegistor/>}></Route>
