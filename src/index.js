@@ -15,6 +15,9 @@ import UserDashboard from './applications/modules/users/userdashboard/UserDashbo
 import Productdetailspage from './applications/modules/dashboard/Productdetailspage';
 import Mygraphpage from './applications/modules/dashboard/Mygraphpage';
 import Paginationpage from './applications/modules/dashboard/Paginationpage';
+import { Provider } from 'react-redux';
+import { Mystorage } from './applications/redux/Mystore';
+import Reduxpage from './applications/redux/Reduxpage';
 const Productpage = lazy(()=>import('./applications/modules/dashboard/Productpage'));
 // import Lazypage from './applications/modules/dashboard/Lazypage';
 const Lazypage = lazy(()=>import('./applications/modules/dashboard/Lazypage'));
@@ -25,6 +28,8 @@ const Lazypage = lazy(()=>import('./applications/modules/dashboard/Lazypage'));
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+
+    <Provider store={Mystorage}>
     <BrowserRouter>
         <Routes>
             <Route path='' element={<UserLogin/>}></Route>
@@ -44,6 +49,8 @@ root.render(
                 </Suspense>}></Route>
                 <Route path='graphpage' element={<Mygraphpage/>}></Route>
                 <Route path='pagination' element={<Paginationpage/>}></Route>
+                <Route path='redux' element={<Reduxpage/>}></Route>
+                
               <Route path='*' element={<Apperror/>}></Route>
               </Route>
               <Route path='registor' element={<UserRegistor/>}></Route>
@@ -54,6 +61,7 @@ root.render(
     
     
     </BrowserRouter>
+    </Provider>
 
 
   </React.StrictMode> 
