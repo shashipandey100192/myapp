@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Abc, { Aboutpage, Contactus, Service } from './pages/About';
+import "./pages/global.css";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

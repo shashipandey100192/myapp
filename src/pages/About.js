@@ -17,7 +17,7 @@ function Contactus()
 {
     return(
        <Fragment>
-             <div>this is my element</div>
+             <div className="first">this is my element</div>
             <section>this is my section  </section>
        </Fragment>
     ) 
