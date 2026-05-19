@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Abc, { Aboutpage, Contactus, Service } from './pages/About';
 import "./pages/global.css";
+import Myservicepage from './pages/Myservicepage';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,6 +13,7 @@ root.render(
     <Aboutpage></Aboutpage>
     <Contactus />
     <Service />
+    <Myservicepage></Myservicepage>
   </React.StrictMode>
 );
 
