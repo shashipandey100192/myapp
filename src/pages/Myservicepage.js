@@ -151,7 +151,7 @@ const myfunc = (p)=>{
   <div className='row'>
     <div className='col'>
       <h1 className='bg-danger'>this is bootstrap heading</h1>
-      <Link to="#">redirect location</Link>
+      <Link to="webpage">user Details</Link>
     </div>
   </div>
 </div>
