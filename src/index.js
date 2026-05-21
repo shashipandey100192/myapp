@@ -5,17 +5,23 @@ import "bootstrap/dist/js/bootstrap.bundle.js";
 import Abc, { Aboutpage, Contactus, Service } from './pages/About';
 import "./pages/global.css";
 import Myservicepage from './pages/Myservicepage';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <BrowserRouter>
+        <Routes>
+            <Route path='' element={<Myservicepage/>}></Route>
+            <Route path='about' element={<Aboutpage/>}></Route>
+            <Route path='*' element={<h1>error page display</h1>}></Route>
+            
+            
 
-    <Abc></Abc>
-    <Aboutpage></Aboutpage>
-    <Contactus />
-    <Service />
-    <Myservicepage></Myservicepage>
+
+        </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
