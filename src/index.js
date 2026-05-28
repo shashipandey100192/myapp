@@ -2,8 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.js";
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import "./assets/global.css";
+import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
 import Apphomepage from './apps/Apphomepage';
+import Errorpage from './modules/shares/Errorpage';
+import Userlogin from './modules/users/auth/Userlogin';
+import Userblankpage from './modules/users/layouts/Userblankpage';
+import Userregistor from './modules/users/auth/Userregistor';
+import Fullpage from './modules/users/layouts/Fullpage';
+import Userlandingpage from './modules/users/pages/Userlandingpage';
 
 
 
@@ -13,6 +20,19 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path='' element={<Apphomepage/>}/>
+
+        <Route path='users' element={<Userblankpage/>}>
+            <Route path='' element={<Userlogin/>}></Route>
+            <Route path='registor' element={<Userregistor/>}></Route>
+            <Route path='landing' element={<Fullpage/>}>
+              <Route path='' element={<Userlandingpage/>}></Route>
+            
+            
+            
+            </Route>
+        </Route>
+
+        <Route path='*' element={<Errorpage/>}></Route>
 
       </Routes>
     
