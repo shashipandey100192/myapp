@@ -8,16 +8,14 @@ function Fullpage() {
     return (
         <Fragment>
             <Headerpage />
-
             <div className='container-fluid'>
                 <div className='row page'>
-                    <div className='col-2'>
+                    <div className='col-2 border'>
                         <Sidebarpage />
                     </div>
-                    <div className='col-10'>
+                    <div className='col-10 border'>
                         <Outlet></Outlet>
                     </div>
-
                 </div>
             </div>
             <Footerpage />

@@ -64,6 +64,6 @@ main {
 
 .page
 {
-    min-height: 90vh;
+    min-height: 80vh;
     max-height: fit-content;
 }
