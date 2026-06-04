@@ -1,0 +1,39 @@
+{
+  "emp": [
+    {
+      "name": "kumar",
+      "age": 20,
+      "id": "pNWsMgF90Aw"
+    },
+    {
+      "email": "shashiweb64@gmail.com",
+      "fullname": "shashi web",
+      "dob": "",
+      "mobile": "",
+      "role": "role",
+      "pass": "asdasd",
+      "id": "jEH0T-xOQyo"
+    },
+    {
+      "email": "shashiweb64@gmail.com",
+      "fullname": "shashi web",
+      "dob": "2026-06-01",
+      "mobile": "5942156451",
+      "role": "admin",
+      "pass": "asdasd",
+      "id": "5M0DpJtwG1Q"
+    },
+    {
+      "email": "shashiweb64@gmail.com",
+      "fullname": "sfsdfsdf",
+      "dob": "2026-06-01",
+      "mobile": "5942156451",
+      "role": "admin",
+      "pass": "asdasd",
+      "id": "0K7_3cVqQ6w"
+    }
+  ],
+  "users": [],
+  "products": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}
