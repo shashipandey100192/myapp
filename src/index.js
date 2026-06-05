@@ -11,6 +11,7 @@ import Userblankpage from './modules/users/layouts/Userblankpage';
 import Userregistor from './modules/users/auth/Userregistor';
 import Fullpage from './modules/users/layouts/Fullpage';
 import Userlandingpage from './modules/users/pages/Userlandingpage';
+import Alluserslist from './modules/users/pages/Alluserslist';
 
 
 
@@ -26,6 +27,7 @@ root.render(
             <Route path='registor' element={<Userregistor/>}></Route>
             <Route path='landing' element={<Fullpage/>}>
               <Route path='' element={<Userlandingpage/>}></Route>
+              <Route path='userlist' element={<Alluserslist/>}/>
             
             
             
