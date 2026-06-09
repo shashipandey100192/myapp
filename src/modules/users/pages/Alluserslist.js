@@ -1,17 +1,29 @@
+import axios from 'axios';
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 
 function Alluserslist() {
 
     const [user,b]=useState([]);
 
-    const alluserlist = () => {
-        fetch("http://localhost:7500/emp").then((r) => {
-            return r.json();
-        }).then((d) => {
-            console.log(d);
-            b(d);
+    // const alluserlist = () => {
+    //     fetch("http://localhost:7500/emp").then((r) => {
+    //         console.log(r);
+    //         return r.json();
+    //     }).then((d) => {
+    //         console.log(d);
+    //         b(d);
+    //     })
+    // }
+
+    const alluserlist = ()=>{
+        axios.get("http://localhost:7500/emp").then((r)=>{
+            console.log(r);
+            b(r.data)
         })
     }
+
+
 
     useEffect(() => {
         alluserlist();
@@ -46,7 +58,7 @@ function Alluserslist() {
                                         <td>{a.mobile}</td>
                                         <td>{a.pass}</td>
                                         <td>
-                                            <span class="badge text-bg-primary">View</span>
+                                            <Link to={"edit/"+a.id} class="badge text-bg-primary">View</Link>
                                             <span class="badge text-bg-warning ms-2">Edit</span>
                                             <span class="badge text-bg-danger ms-2">Del</span>
                                         </td>
