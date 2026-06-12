@@ -1,11 +1,13 @@
 import { type } from '@testing-library/user-event/dist/type';
 import React from 'react'
 import { useForm } from 'react-hook-form'
+import { useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 
 
 function Userregistor() {
 
+    const mynav = useNavigate();
     const { register, handleSubmit, formState: { errors } } = useForm();
 
     const submit = (e) => {
@@ -31,6 +33,9 @@ function Userregistor() {
                 console.log(d);
             });
             toast.success("user registor succefully");
+            setTimeout(()=>{
+                mynav('/users');
+            },2000)
 
         }
 
@@ -73,6 +78,26 @@ function Userregistor() {
                                         <input type="text" class="form-control" {...register('mobile')} />
                                     </div>
                                 </div>
+                                <div className='col-md-6'>
+                                    <div class="mb-3">
+                                        <label class="form-label">salary</label>
+                                        <input type="text" class="form-control" {...register('salary')} />
+                                    </div>
+                                </div>
+                                <div className='col-md-6'>
+                                    <div class="mb-3">
+                                        <label class="form-label">HRA</label>
+                                        <input type="text" class="form-control" {...register('hra')} />
+                                    </div>
+                                </div>
+                                <div className='col-md-6'>
+                                    <div class="mb-3">
+                                        <label class="form-label">extra</label>
+                                        <input type="text" class="form-control" {...register('extra')} />
+                                    </div>
+                                </div>
+
+
                                 <div className='col-md-6'>
                                     <div class="mb-3">
                                         <label class="form-label">Role</label>

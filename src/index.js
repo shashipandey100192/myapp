@@ -13,6 +13,7 @@ import Fullpage from './modules/users/layouts/Fullpage';
 import Userlandingpage from './modules/users/pages/Userlandingpage';
 import Alluserslist from './modules/users/pages/Alluserslist';
 import Userdetails from './modules/users/pages/Userdetails';
+import Charts from './modules/users/pages/Charts';
 
 
 
@@ -30,6 +31,7 @@ root.render(
               <Route path='' element={<Userlandingpage/>}></Route>
               <Route path='userlist' element={<Alluserslist/>}/>
               <Route path='userlist/edit/:id' element={<Userdetails/>}/>
+              <Route path='chartpage' element={<Charts/>}/>
             
             
             

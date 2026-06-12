@@ -1,221 +1,137 @@
 {
   "emp": [
     {
-      "email": "shashiweb64@gmail.com",
-      "fullname": "shashi web",
-      "dob": "",
-      "mobile": "",
-      "role": "role",
-      "pass": "asdasd",
-      "id": "jEH0T-xOQyo"
-    },
-    {
-      "email": "shashiweb64@gmail.com",
-      "fullname": "shashi web",
-      "dob": "2026-06-01",
-      "mobile": "5942156451",
-      "role": "admin",
-      "pass": "asdasd",
-      "id": "5M0DpJtwG1Q"
-    },
-    {
-      "email": "shashiweb64@gmail.com",
-      "fullname": "sfsdfsdf",
-      "dob": "2026-06-01",
-      "mobile": "5942156451",
-      "role": "admin",
-      "pass": "asdasd",
-      "id": "0K7_3cVqQ6w"
-    },
-    {
-      "email": "rohit@gmail.com",
-      "fullname": "rohit",
-      "dob": "2026-06-11",
-      "mobile": "9999999999999",
+      "email": "vikas.kumar5@gmail.com",
+      "fullname": "Vikas Kumar",
+      "dob": "1995-06-15",
+      "mobile": "987650005",
+      "salary": "20000",
+      "hra": "1500",
+      "extra": "1000",
       "role": "user",
-      "pass": "aaabbss",
-      "id": "IerkPBDTztQ"
+      "pass": "pass123",
+      "id": "EMP005"
     },
-     {
-    "email": "rohit1@gmail.com",
-    "fullname": "Rohit Kumar",
-    "dob": "2000-01-15",
-    "mobile": "9000000001",
-    "role": "user",
-    "pass": "pass1001",
-    "id": "USR001"
-  },
-  {
-    "email": "aman2@gmail.com",
-    "fullname": "Aman Verma",
-    "dob": "1999-02-20",
-    "mobile": "9000000002",
-    "role": "user",
-    "pass": "pass1002",
-    "id": "USR002"
-  },
-  {
-    "email": "rahul3@gmail.com",
-    "fullname": "Rahul Singh",
-    "dob": "2001-03-12",
-    "mobile": "9000000003",
-    "role": "user",
-    "pass": "pass1003",
-    "id": "USR003"
-  },
-  {
-    "email": "vikas4@gmail.com",
-    "fullname": "Vikas Sharma",
-    "dob": "1998-04-25",
-    "mobile": "9000000004",
-    "role": "user",
-    "pass": "pass1004",
-    "id": "USR004"
-  },
-  {
-    "email": "neha5@gmail.com",
-    "fullname": "Neha Gupta",
-    "dob": "2002-05-18",
-    "mobile": "9000000005",
-    "role": "user",
-    "pass": "pass1005",
-    "id": "USR005"
-  },
-  {
-    "email": "priya6@gmail.com",
-    "fullname": "Priya Mishra",
-    "dob": "2000-06-10",
-    "mobile": "9000000006",
-    "role": "user",
-    "pass": "pass1006",
-    "id": "USR006"
-  },
-  {
-    "email": "deepak7@gmail.com",
-    "fullname": "Deepak Yadav",
-    "dob": "1997-07-08",
-    "mobile": "9000000007",
-    "role": "user",
-    "pass": "pass1007",
-    "id": "USR007"
-  },
-  {
-    "email": "sonu8@gmail.com",
-    "fullname": "Sonu Patel",
-    "dob": "1999-08-14",
-    "mobile": "9000000008",
-    "role": "user",
-    "pass": "pass1008",
-    "id": "USR008"
-  },
-  {
-    "email": "pooja9@gmail.com",
-    "fullname": "Pooja Singh",
-    "dob": "2001-09-22",
-    "mobile": "9000000009",
-    "role": "user",
-    "pass": "pass1009",
-    "id": "USR009"
-  },
-  {
-    "email": "ankit10@gmail.com",
-    "fullname": "Ankit Gupta",
-    "dob": "1998-10-19",
-    "mobile": "9000000010",
-    "role": "user",
-    "pass": "pass1010",
-    "id": "USR010"
-  },
-  {
-    "email": "sachin11@gmail.com",
-    "fullname": "Sachin Kumar",
-    "dob": "2000-11-05",
-    "mobile": "9000000011",
-    "role": "user",
-    "pass": "pass1011",
-    "id": "USR011"
-  },
-  {
-    "email": "kajal12@gmail.com",
-    "fullname": "Kajal Sharma",
-    "dob": "1999-12-17",
-    "mobile": "9000000012",
-    "role": "user",
-    "pass": "pass1012",
-    "id": "USR012"
-  },
-  {
-    "email": "nitin13@gmail.com",
-    "fullname": "Nitin Verma",
-    "dob": "1997-01-28",
-    "mobile": "9000000013",
-    "role": "user",
-    "pass": "pass1013",
-    "id": "USR013"
-  },
-  {
-    "email": "rani14@gmail.com",
-    "fullname": "Rani Yadav",
-    "dob": "2002-02-11",
-    "mobile": "9000000014",
-    "role": "user",
-    "pass": "pass1014",
-    "id": "USR014"
-  },
-  {
-    "email": "manoj15@gmail.com",
-    "fullname": "Manoj Pandey",
-    "dob": "1998-03-21",
-    "mobile": "9000000015",
-    "role": "user",
-    "pass": "pass1015",
-    "id": "USR015"
-  },
-  {
-    "email": "seema16@gmail.com",
-    "fullname": "Seema Gupta",
-    "dob": "2001-04-09",
-    "mobile": "9000000016",
-    "role": "user",
-    "pass": "pass1016",
-    "id": "USR016"
-  },
-  {
-    "email": "ajay17@gmail.com",
-    "fullname": "Ajay Singh",
-    "dob": "1999-05-30",
-    "mobile": "9000000017",
-    "role": "user",
-    "pass": "pass1017",
-    "id": "USR017"
-  },
-  {
-    "email": "komal18@gmail.com",
-    "fullname": "Komal Mishra",
-    "dob": "2000-06-27",
-    "mobile": "9000000018",
-    "role": "user",
-    "pass": "pass1018",
-    "id": "USR018"
-  },
-  {
-    "email": "vivek19@gmail.com",
-    "fullname": "Vivek Tiwari",
-    "dob": "1998-07-13",
-    "mobile": "9000000019",
-    "role": "user",
-    "pass": "pass1019",
-    "id": "USR019"
-  },
-  {
-    "email": "swati20@gmail.com",
-    "fullname": "Swati Chauhan",
-    "dob": "2001-08-16",
-    "mobile": "9000000020",
-    "role": "user",
-    "pass": "pass1020",
-    "id": "USR020"
-  }
+    {
+      "email": "pooja.gupta6@gmail.com",
+      "fullname": "Pooja Gupta",
+      "dob": "1998-09-21",
+      "mobile": "987650006",
+      "salary": "13500",
+      "hra": "850",
+      "extra": "550",
+      "role": "admin",
+      "pass": "pass123",
+      "id": "EMP006"
+    },
+    {
+      "email": "sandeep.mishra7@gmail.com",
+      "fullname": "Sandeep Mishra",
+      "dob": "1994-12-30",
+      "mobile": "987650007",
+      "salary": "22000",
+      "hra": "1800",
+      "extra": "1200",
+      "role": "user",
+      "pass": "pass123",
+      "id": "EMP007"
+    },
+    {
+      "email": "anjali.jain8@gmail.com",
+      "fullname": "Anjali Jain",
+      "dob": "2000-03-14",
+      "mobile": "987650008",
+      "salary": "12500",
+      "hra": "700",
+      "extra": "450",
+      "role": "admin",
+      "pass": "pass123",
+      "id": "EMP008"
+    },
+    {
+      "email": "manoj.tiwari11@gmail.com",
+      "fullname": "Manoj Tiwari",
+      "dob": "1993-02-08",
+      "mobile": "987650011",
+      "salary": "25000",
+      "hra": "2000",
+      "extra": "1500",
+      "role": "admin",
+      "pass": "pass123",
+      "id": "EMP011"
+    },
+    {
+      "email": "swati.saxena12@gmail.com",
+      "fullname": "Swati Saxena",
+      "dob": "1998-10-22",
+      "mobile": "987650012",
+      "salary": "14500",
+      "hra": "950",
+      "extra": "650",
+      "role": "backend",
+      "pass": "pass123",
+      "id": "EMP012"
+    },
+    {
+      "email": "deepak.agarwal13@gmail.com",
+      "fullname": "Deepak Agarwal",
+      "dob": "1995-01-05",
+      "mobile": "987650013",
+      "salary": "21000",
+      "hra": "1600",
+      "extra": "1100",
+      "role": "user",
+      "pass": "pass123",
+      "id": "EMP013"
+    },
+    {
+      "email": "rekha.thakur14@gmail.com",
+      "fullname": "Rekha Thakur",
+      "dob": "1999-06-28",
+      "mobile": "987650014",
+      "salary": "13000",
+      "hra": "800",
+      "extra": "500",
+      "role": "supperadmin",
+      "pass": "pass123",
+      "id": "EMP014"
+    },
+    {
+      "email": "nitin.shukla15@gmail.com",
+      "fullname": "Nitin Shukla",
+      "dob": "1994-08-11",
+      "mobile": "987650015",
+      "salary": "23000",
+      "hra": "1900",
+      "extra": "1300",
+      "role": "user",
+      "pass": "pass123",
+      "id": "EMP015"
+    },
+    {
+      "email": "meena.kapoor16@gmail.com",
+      "fullname": "Meena Kapoor",
+      "dob": "1997-12-03",
+      "mobile": "987650016",
+      "salary": "15500",
+      "hra": "1000",
+      "extra": "700",
+      "role": "user",
+      "pass": "pass123",
+      "id": "EMP016"
+    },
+    {
+      "email": "arun.chauhan17@gmail.com",
+      "fullname": "Arun Chauhan",
+      "dob": "1996-04-19",
+      "mobile": "987650017",
+      "salary": "19000",
+      "hra": "1300",
+      "extra": "850",
+      "role": "supperadmin",
+      "pass": "pass123",
+      "id": "EMP017"
+    }
   ],
   "users": [],
   "products": [],
