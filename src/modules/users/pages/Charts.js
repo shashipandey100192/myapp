@@ -5,7 +5,7 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'rec
 
 
 
-function Charts() {
+function Charts(props) {
 
   const [cdata, cdataupdate]=useState([])
   const [x,y]=useState([]);
@@ -45,6 +45,8 @@ const optselect = (d)=>{
 <div className='container-fluid'>
   <div className='row'>
     <div className='col-md-3'>
+      {props.xyz}
+      <input type='button' value="click me" onClick={props.abc}/>
       <select className='form-select' onChange={optselect}>
         <option hidden>select user type</option>
         {x.map((d)=>{

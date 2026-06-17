@@ -3,6 +3,7 @@ import { Link,useNavigate } from 'react-router-dom';
 import { toast,ToastContainer } from 'react-toastify';
 
 function Userlogin() {
+const getlocal = localStorage.getItem('myuser');
 const abc = useNavigate();
 
 const [email,updateemail]= useState("");
@@ -53,7 +54,7 @@ const loginValidation = ()=>{
                     <div className='container-fluid '>
                         <div className='row '>
                             <div className='col-12 text-center'>
-                                <p className='h5 mb-5'>Login page</p>
+                                <p className='h5 mb-5'>Login page : {getlocal}</p>
                                 <ToastContainer autoClose="1000" position='top-left' theme='dark'/>
                             </div>
                             <div className='col-md-12'>

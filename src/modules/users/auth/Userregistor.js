@@ -11,6 +11,7 @@ function Userregistor() {
     const { register, handleSubmit, formState: { errors } } = useForm();
 
     const submit = (e) => {
+        localStorage.setItem("myuser",JSON.stringify(e.fullname));
         console.log(e);
         // fetch("http://localhost:7500/emp").then((d)=>{
         //     return d.json();

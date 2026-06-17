@@ -1,18 +1,6 @@
 {
   "emp": [
     {
-      "email": "vikas.kumar5@gmail.com",
-      "fullname": "Vikas Kumar",
-      "dob": "1995-06-15",
-      "mobile": "987650005",
-      "salary": "20000",
-      "hra": "1500",
-      "extra": "1000",
-      "role": "user",
-      "pass": "pass123",
-      "id": "EMP005"
-    },
-    {
       "email": "pooja.gupta6@gmail.com",
       "fullname": "Pooja Gupta",
       "dob": "1998-09-21",
@@ -131,6 +119,30 @@
       "role": "supperadmin",
       "pass": "pass123",
       "id": "EMP017"
+    },
+    {
+      "email": "yarpadlo.in@gmail.com",
+      "fullname": "yarpadlo",
+      "dob": "2026-06-03",
+      "mobile": "987456321",
+      "salary": "8000",
+      "hra": "400",
+      "extra": "600",
+      "role": "user",
+      "pass": "asdasd",
+      "id": "TumNIfqDylQ"
+    },
+    {
+      "email": "xyz@gmail.com",
+      "fullname": "ravi singh",
+      "dob": "2026-06-09",
+      "mobile": "5942156451",
+      "salary": "8000",
+      "hra": "400",
+      "extra": "600",
+      "role": "admin",
+      "pass": "asdasd",
+      "id": "DE8FXQ5DDpU"
     }
   ],
   "users": [],

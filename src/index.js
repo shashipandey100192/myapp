@@ -14,12 +14,15 @@ import Userlandingpage from './modules/users/pages/Userlandingpage';
 import Alluserslist from './modules/users/pages/Alluserslist';
 import Userdetails from './modules/users/pages/Userdetails';
 import Charts from './modules/users/pages/Charts';
+import { Provider } from 'react-redux';
+import { datastore } from './modules/reduxpage/Mystore';
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Provider store={datastore}>
     <BrowserRouter>
       <Routes>
         <Route path='' element={<Apphomepage/>}/>
@@ -43,6 +46,7 @@ root.render(
       </Routes>
     
     </BrowserRouter>
+    </Provider>
    
   </React.StrictMode>
 );

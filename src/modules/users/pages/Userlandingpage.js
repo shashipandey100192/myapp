@@ -1,8 +1,15 @@
 import React from 'react'
 import { FaPersonCirclePlus } from "react-icons/fa6";
 import { GoStack } from "react-icons/go"
+import Charts from './Charts';
 
 function Userlandingpage() {
+const username = "ravi singh";
+const  userr=[{name:"ravi",age:50,phone:"46897545"},{},{},{}];
+const func = ()=>{
+  alert("welcome to child");
+}
+
   return (
     <div className='container-fluid mt-2'>
       <div className='row'>
@@ -58,7 +65,9 @@ function Userlandingpage() {
         <div className='col-md-8 mt-3'>
           <div class="card bg-dark text-white shadow">
             <div class="card-body">
-              <h6 class="card-title">Graph</h6>
+              
+<Charts xyz={username} abc={func}/>
+
               
             </div>
           </div>

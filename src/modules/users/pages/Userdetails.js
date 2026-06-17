@@ -1,8 +1,15 @@
 import React,{useEffect, useState} from 'react'
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import { useSelector,useDispatch } from 'react-redux';
+import {changeage } from '../../reduxpage/Myactions';
 
 function Userdetails() {
+     const myage = useSelector((state) => state.counter.age);
+    const abc = useDispatch();
+
+
+
 const {id} = useParams();
 const [user,updateuser]=useState({})
 
@@ -22,7 +29,14 @@ const singleuser = ()=>{
 
   return (
     <div className='container-fluid'>
+
         <div className='row'>
+            <div className='col-12'>
+                <h1>name: {myage}</h1>
+
+                 <button onClick={() => abc(changeage())}>chang</button>
+
+            </div>
             <div className='col-md-2'> image </div>
             <div className='col-md-10'>
                 <h3>id: {user.id}</h3>
