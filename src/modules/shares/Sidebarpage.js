@@ -10,6 +10,7 @@ Home
    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
      <li><Link to="userlist" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Users</Link></li>
 <li><Link to="chartpage" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Chart</Link></li>
+<li><Link to="reduxpage" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Redux</Link></li>
  <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Reports</a></li>
   </ul> </div> </li> <li class="mb-1"> <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
 Dashboard

@@ -16,6 +16,7 @@ import Userdetails from './modules/users/pages/Userdetails';
 import Charts from './modules/users/pages/Charts';
 import { Provider } from 'react-redux';
 import { datastore } from './modules/reduxpage/Mystore';
+import Reduxpage from './modules/reduxpage/Reduxpage';
 
 
 
@@ -35,6 +36,7 @@ root.render(
               <Route path='userlist' element={<Alluserslist/>}/>
               <Route path='userlist/edit/:id' element={<Userdetails/>}/>
               <Route path='chartpage' element={<Charts/>}/>
+              <Route path='reduxpage' element={<Reduxpage/>}></Route>
             
             
             

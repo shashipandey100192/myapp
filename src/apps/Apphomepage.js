@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { AppData } from './controls/Appcard'
 
+
 function Apphomepage() {
     return (
         <div className='container-fluid'>
@@ -174,6 +175,7 @@ function Apphomepage() {
                                 <div class="card-body">
                                     <h3></h3>
                                     <h5 class="card-title text-center">{d.appname}</h5>
+                                    
                                 </div>
                             </Link>
                         </div>
