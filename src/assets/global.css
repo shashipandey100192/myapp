@@ -67,3 +67,12 @@ main {
     min-height: 80vh;
     max-height: fit-content;
 }
+.loeading
+{
+  padding:50px;
+  text-align: center;
+  color:white;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: red;
+  
+}

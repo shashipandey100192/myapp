@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense,lazy } from 'react';
 import ReactDOM from 'react-dom/client';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.js";
@@ -16,7 +16,9 @@ import Userdetails from './modules/users/pages/Userdetails';
 import Charts from './modules/users/pages/Charts';
 import { Provider } from 'react-redux';
 import { datastore } from './modules/reduxpage/Mystore';
-import Reduxpage from './modules/reduxpage/Reduxpage';
+import Reduxpage from './modules/reduxpage/Reduxpage';  
+// import Lazypage from './modules/users/pages/Lazypage';
+const Lazypage = lazy(()=>import("./modules/users/pages/Lazypage"));
 
 
 
@@ -37,9 +39,13 @@ root.render(
               <Route path='userlist/edit/:id' element={<Userdetails/>}/>
               <Route path='chartpage' element={<Charts/>}/>
               <Route path='reduxpage' element={<Reduxpage/>}></Route>
-            
-            
-            
+              <Route path='lazypage' element={<Suspense fallback={<h1 className='loeading'>my content is loading...</h1>}>
+                <Lazypage/>
+              </Suspense>}>
+              </Route>
+
+            <Route path='*' element={<Errorpage/>}></Route>
+
             </Route>
         </Route>
 

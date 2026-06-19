@@ -28,32 +28,13 @@ export const AppData = [
         apptheams:"bg-danger"
     },
     {
-        appname:"user management",
-        applink:"users",
-        appicon:"no-icon",
-        appstatus:true,
-        apptheams:"bg-danger"
-    },
-    {
-        appname:"user management",
-        applink:"users",
-        appicon:"no-icon",
-        appstatus:true,
-        apptheams:"bg-danger"
-    },
-    {
-        appname:"user management",
-        applink:"users",
-        appicon:"no-icon",
-        appstatus:true,
-        apptheams:"bg-danger"
-    },
-    {
-        appname:"user management",
-        applink:"users",
+        appname:"sales management",
+        applink:"allinvoice",
         appicon:"no-icon",
         appstatus:true,
         apptheams:"bg-danger"
     }
+   
+   
     
 ];
