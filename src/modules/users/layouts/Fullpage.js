@@ -3,6 +3,8 @@ import { Outlet } from 'react-router-dom'
 import Headerpage from '../../shares/Headerpage'
 import Footerpage from '../../shares/Footerpage'
 import Sidebarpage from '../../shares/Sidebarpage'
+import ChatBot from 'react-chatbotify'
+import { Mysetting } from '../../shares/Chatbotsetting'
 
 function Fullpage() {
     return (
@@ -15,10 +17,11 @@ function Fullpage() {
                     </div>
                     <div className='col-10 border'>
                         <Outlet></Outlet>
+                        <ChatBot settings={Mysetting}/>
                     </div>
                 </div>
             </div>
-            <Footerpage />
+            
 
         </Fragment>
     )
