@@ -18,6 +18,7 @@ import { Provider } from 'react-redux';
 import { datastore } from './modules/reduxpage/Mystore';
 import Reduxpage from './modules/reduxpage/Reduxpage';  
 import Abcd from './modules/users/pages/Mediapage.tsx';
+import Muipage from './modules/users/pages/Muipage.js';
 // import Lazypage from './modules/users/pages/Lazypage';
 const Lazypage = lazy(()=>import("./modules/users/pages/Lazypage"));
 
@@ -45,7 +46,7 @@ root.render(
               </Suspense>}>
               </Route>
               <Route path='mediapage' element={<Abcd/>}></Route>
-
+              <Route path='mui' element={<Muipage/>}></Route>
             <Route path='*' element={<Errorpage/>}></Route>
 
             </Route>

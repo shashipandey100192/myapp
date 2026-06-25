@@ -47,6 +47,18 @@
       "role": "user",
       "pass": "asdasd",
       "id": "5gRiVxXkmDA"
+    },
+    {
+      "email": "abc@gmail.com",
+      "fullname": "akash",
+      "dob": "2026-06-11",
+      "mobile": "9999999999999",
+      "salary": "8000",
+      "hra": "400",
+      "extra": "600",
+      "role": "user",
+      "pass": "asdasd",
+      "id": "MxYkdK2gL0E"
     }
   ],
   "users": [],
