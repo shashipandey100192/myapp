@@ -42,10 +42,11 @@ function Alluserslist() {
 
     return (
         <div className='container-fluid'>
+            <ToastContainer></ToastContainer>
             <div className='row'>
                 <div className='col-12'>
                     <table class="table">
-                        <ToastContainer></ToastContainer>
+                        
                         <thead>
                             <tr>
                                 <th scope="col">Id</th>
@@ -63,7 +64,7 @@ function Alluserslist() {
                         <tbody>
                             {user.map((a) => {
                                 return (
-                                    <tr>
+                                    <tr key={a.id}>
                                         <th scope="row">{a.id}</th>
                                         <td>{a.email}</td>
                                         <td>{a.fullname}</td>

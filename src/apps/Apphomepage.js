@@ -168,9 +168,10 @@ function Apphomepage() {
                 </div>
             </div> */}
             <div className='row'>
-                {AppData.map((d) => {
+                {AppData.map((d,a=1) => {
                     return (
-                        <div className='col-md-2 mt-3'>
+                        <div className='col-md-2 mt-3' key={a=a+1}>
+                            
                             <Link to={d.applink} class="card bg-info text-white shadow text-decoration-none">
                                 <div class="card-body">
                                     <h3></h3>
