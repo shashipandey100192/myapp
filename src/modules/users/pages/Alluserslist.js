@@ -18,9 +18,9 @@ function Alluserslist() {
     // }
 
     const alluserlist = ()=>{
-        axios.get("http://localhost:7500/emp").then((r)=>{
+        axios.get("http://localhost:8700/userlist").then((r)=>{
             console.log(r);
-            b(r.data)
+            b(r.data.userlist);
         })
     }
 
@@ -64,8 +64,8 @@ function Alluserslist() {
                         <tbody>
                             {user.map((a) => {
                                 return (
-                                    <tr key={a.id}>
-                                        <th scope="row">{a.id}</th>
+                                    <tr key={a._id}>
+                                        <th scope="row">{a._id}</th>
                                         <td>{a.email}</td>
                                         <td>{a.fullname}</td>
                                         <td>{a.role}</td>
