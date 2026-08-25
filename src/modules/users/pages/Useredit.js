@@ -1,60 +1,68 @@
-import { type } from '@testing-library/user-event/dist/type';
+
+import React,{useEffect,useState} from 'react'
 import axios from 'axios';
-import React from 'react'
 import { useForm } from 'react-hook-form'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,useParams } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import { baseurl } from '../../../service/Urlpath';
 
-
-function Userregistor() {
-
+function Useredit() {
+    const { id } = useParams();
     const mynav = useNavigate();
+    const [user, updateuser] = useState({
+        dob:"",
+        email:"",
+        fullname:"",
+        hra:"",
+        mobile:"",
+        extra:"",
+        pass:"",
+        salary:"",
+        role:""
+    });
     const { register, handleSubmit, formState: { errors } } = useForm();
 
-    const submit = (e) => {
-        console.log(e);
-            axios.post(`${baseurl}/userregistor`,e).then((r)=>{
-                console.log(r);
-                if(r.data.statuscode===420)
-                {
-                    toast.success(r.data.msg,{autoClose:1000,theme:'dark'})
-                }
-                
-                if(r.data.statuscode===370)
-                {
-                    toast.success(r.data.msg,{autoClose:1000,theme:'dark'})
-                }
 
-                if(r.data.statuscode===758)
-                {
-                    toast.success(r.data.msg,{autoClose:1000,theme:'dark'});
-                    setTimeout(()=>{
-                        mynav("/users");
-                    },1000);
-
-                }
-
+    const singleuser = () => {
+        axios.get(`${baseurl}/singleuser/${id}`)
+            .then((r) => {
+                console.log(r.data);
+                updateuser(r.data.user);
             })
+            .catch((err) => {
+                console.log(err);
+            });
+    };
+
+    useEffect(() => {
+        singleuser();
+    }, [id]);
 
 
-     
-        
-            // toast.success("user registor succefully");
-            // setTimeout(()=>{
-            //     mynav('/users');
-            // },2000)
+const fieldupdate = (f)=>{
+    updateuser({
+        ...user,
+        [f.target.name]: f.target.value
+    })
+}
 
-        }
 
+    const submit = () => {
+        axios.patch(`${baseurl}/updateuser/${id}`,user).then((r)=>{
+            console.log(r);
+        })
+    }   
+         
     
 
 
-    return (
-        <form onSubmit={handleSubmit(submit)}>
-            <div className='container'>
+
+
+  return (
+     <form onSubmit={handleSubmit(submit)}>
+            <div className='container-fluid'>
                 <div className='row justify-content-center'>
-                    <div className='col-md-8 border p-3 bg-light shadow'>
+                    <div className='col-md-12 border p-3 bg-light shadow'>
                         <ToastContainer />
                         <div className='container-fluid '>
                             <div className='row '>
@@ -64,44 +72,44 @@ function Userregistor() {
                                 <div className='col-md-6'>
                                     <div class="mb-3">
                                         <label class="form-label">Email address</label>
-                                        <input type="email" class="form-control" {...register('email', { required: true })} name='email' />
+                                        <input type="email" class="form-control" {...register('email', { required: true })} name='email' value={user.email} onInput={fieldupdate} />
                                         {errors.email && <p className='text-danger'>email is required</p>}
                                     </div>
                                 </div>
                                 <div className='col-md-6'>
                                     <div class="mb-3">
                                         <label class="form-label">Full Name</label>
-                                        <input type="text" class="form-control" {...register('fullname')} name='fullname' />
+                                        <input type="text" class="form-control" {...register('fullname')} name='fullname' value={user.fullname} onInput={fieldupdate}/>
                                     </div>
                                 </div>
                                 <div className='col-md-6'>
                                     <div class="mb-3">
                                         <label class="form-label">DOB</label>
-                                        <input type="date" class="form-control" {...register('dob')} />
+                                        <input type="date" class="form-control" {...register('dob')} value={user.dob} onChange={fieldupdate}/>
                                     </div>
                                 </div>
                                 <div className='col-md-6'>
                                     <div class="mb-3">
                                         <label class="form-label">Mobile No</label>
-                                        <input type="text" class="form-control" {...register('mobile')} />
+                                        <input type="text" class="form-control" {...register('mobile')} value={user.mobile} onInput={fieldupdate}/>
                                     </div>
                                 </div>
                                 <div className='col-md-6'>
                                     <div class="mb-3">
                                         <label class="form-label">salary</label>
-                                        <input type="text" class="form-control" {...register('salary')} />
+                                        <input type="text" class="form-control" {...register('salary')} value={user.salary} onInput={fieldupdate}/>
                                     </div>
                                 </div>
                                 <div className='col-md-6'>
                                     <div class="mb-3">
                                         <label class="form-label">HRA</label>
-                                        <input type="text" class="form-control" {...register('hra')} />
+                                        <input type="text" class="form-control" {...register('hra')} value={user.hra} onInput={fieldupdate}/>
                                     </div>
                                 </div>
                                 <div className='col-md-6'>
                                     <div class="mb-3">
                                         <label class="form-label">extra</label>
-                                        <input type="text" class="form-control" {...register('extra')} />
+                                        <input type="text" class="form-control" {...register('extra')} value={user.extra} onInput={fieldupdate}/>
                                     </div>
                                 </div>
 
@@ -109,7 +117,7 @@ function Userregistor() {
                                 <div className='col-md-6'>
                                     <div class="mb-3">
                                         <label class="form-label">Role</label>
-                                        <select className='form-select' {...register('role')}>
+                                        <select className='form-select' {...register('role')} value={user.role} onChange={fieldupdate}>
                                             <option hidden>role</option>
                                             <option>user</option>
                                             <option>admin</option>
@@ -123,7 +131,7 @@ function Userregistor() {
                                 <div className='col-md-6'>
                                     <div class="mb-3">
                                         <label class="form-label">password</label>
-                                        <input type="password" class="form-control" {...register('pass', { required: true, minLength: 5, maxLength: 10, pattern: /^[a-d]/ })} />
+                                        <input type="password" class="form-control" {...register('pass', { required: true, minLength: 5, maxLength: 10, pattern: /^[a-d]/ })} value={user.pass} onInput={fieldupdate}/>
                                         {errors.pass?.type === "required" && <p>password is required</p>}
                                         {errors.pass?.type === "minLength" && <p>minimum 5 char required</p>}
                                         {errors.pass?.type === "maxLength" && <p>to strong </p>}
@@ -145,7 +153,7 @@ function Userregistor() {
                 </div>
             </div>
         </form>
-    )
+  )
 }
 
-export default Userregistor
+export default Useredit

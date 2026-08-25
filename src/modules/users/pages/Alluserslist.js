@@ -2,28 +2,18 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import { toast,ToastContainer } from 'react-toastify';
+import { baseurl } from '../../../service/Urlpath';
 
 function Alluserslist() {
 
     const [user,b]=useState([]);
 
-    // const alluserlist = () => {
-    //     fetch("http://localhost:7500/emp").then((r) => {
-    //         console.log(r);
-    //         return r.json();
-    //     }).then((d) => {
-    //         console.log(d);
-    //         b(d);
-    //     })
-    // }
-
     const alluserlist = ()=>{
-        axios.get("http://localhost:8700/userlist").then((r)=>{
+        axios.get(`${baseurl}/userlist`).then((r)=>{
             console.log(r);
             b(r.data.userlist);
         })
     }
-
 
 
     useEffect(() => {
@@ -32,10 +22,13 @@ function Alluserslist() {
 
     const userdelete = (d)=>{
         console.log(d);
-        axios.delete(`http://localhost:7500/emp/${d}`).then((p)=>{
+        axios.delete(`${baseurl}/userdelete/${d}`).then((p)=>{
             console.log(p);
-            toast.success("record successfully delete",{autoClose:1000})
-            alluserlist();
+            if(p.data.mycode===240)
+            {
+               toast.success(p.data.msg,{autoClose:1000});
+               alluserlist();
+            }
         })
 
     }
@@ -75,9 +68,9 @@ function Alluserslist() {
                                         <td>{a.hra}</td>
                                         <td>{a.extra}</td>
                                         <td>
-                                            <Link to={"edit/"+a.id} class="badge text-bg-primary">View</Link>
-                                            <span class="badge text-bg-warning ms-2">Edit</span>
-                                            <span class="badge text-bg-danger ms-2" onClick={()=>{userdelete(a.id)}}>Del</span>
+                                            <Link to={"details/"+a._id} class="badge text-bg-primary">View</Link>
+                                            <Link to={"edit/"+a._id} class="badge text-bg-warning ms-2">Edit</Link>
+                                            <button class="badge text-bg-danger ms-2" onClick={()=>{userdelete(a._id)}}>Del</button>
                                         </td>
                                     </tr>
                                 )

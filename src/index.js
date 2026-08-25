@@ -19,6 +19,7 @@ import { datastore } from './modules/reduxpage/Mystore';
 import Reduxpage from './modules/reduxpage/Reduxpage';  
 import Abcd from './modules/users/pages/Mediapage.tsx';
 import Muipage from './modules/users/pages/Muipage.js';
+import Useredit from './modules/users/pages/Useredit.js';
 // import Lazypage from './modules/users/pages/Lazypage';
 const Lazypage = lazy(()=>import("./modules/users/pages/Lazypage"));
 
@@ -38,7 +39,8 @@ root.render(
             <Route path='landing' element={<Fullpage/>}>
               <Route path='' element={<Userlandingpage/>}></Route>
               <Route path='userlist' element={<Alluserslist/>}/>
-              <Route path='userlist/edit/:id' element={<Userdetails/>}/>
+              <Route path='userlist/details/:id' element={<Userdetails/>}/>
+              <Route path='userlist/edit/:id' element={<Useredit/>}/>
               <Route path='chartpage' element={<Charts/>}/>
               <Route path='reduxpage' element={<Reduxpage/>}></Route>
               <Route path='lazypage' element={<Suspense fallback={<h1 className='loeading'>my content is loading...</h1>}>
