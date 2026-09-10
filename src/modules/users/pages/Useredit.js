@@ -28,6 +28,7 @@ function Useredit() {
             .then((r) => {
                 console.log(r.data);
                 updateuser(r.data.user);
+                
             })
             .catch((err) => {
                 console.log(err);
@@ -48,8 +49,15 @@ const fieldupdate = (f)=>{
 
 
     const submit = () => {
+        console.log(user);
         axios.patch(`${baseurl}/updateuser/${id}`,user).then((r)=>{
             console.log(r);
+            toast.success(r.data.msg,{autoClose:1000,theme:"dark"});
+                setTimeout(()=>{
+                    mynav("/users/landing/userlist");
+                },1000);
+
+                
         })
     }   
          
@@ -59,7 +67,7 @@ const fieldupdate = (f)=>{
 
 
   return (
-     <form onSubmit={handleSubmit(submit)}>
+     <form>
             <div className='container-fluid'>
                 <div className='row justify-content-center'>
                     <div className='col-md-12 border p-3 bg-light shadow'>
@@ -72,7 +80,7 @@ const fieldupdate = (f)=>{
                                 <div className='col-md-6'>
                                     <div class="mb-3">
                                         <label class="form-label">Email address</label>
-                                        <input type="email" class="form-control" {...register('email', { required: true })} name='email' value={user.email} onInput={fieldupdate} />
+                                        <input type="email" class="form-control" {...register('email', { required: true })} name='email' value={user.email} disabled/>
                                         {errors.email && <p className='text-danger'>email is required</p>}
                                     </div>
                                 </div>
@@ -141,7 +149,7 @@ const fieldupdate = (f)=>{
                                 <div className='col-md-12 text-center'>
                                     <div class="mb-3">
 
-                                        <input type="submit" class="btn btn-outline-success" value="Registor Now" />
+                                        <input type="button" class="btn btn-outline-success" value="Registor Now" onClick={submit} />
                                     </div>
                                 </div>
 
