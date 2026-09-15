@@ -8,8 +8,8 @@ function Alluserslist() {
 
     const [user,b]=useState([]);
 
-    const alluserlist = ()=>{
-        axios.get(`${baseurl}/userlist`,{withCredentials: true}).then((r)=>{
+    const alluserlist = async ()=>{
+        await axios.get(`${baseurl}/userlist`,{withCredentials: true}).then((r)=>{
             console.log(r);
             b(r.data.userlist);
         })
