@@ -20,6 +20,7 @@ import Reduxpage from './modules/reduxpage/Reduxpage';
 import Abcd from './modules/users/pages/Mediapage.tsx';
 import Muipage from './modules/users/pages/Muipage.js';
 import Useredit from './modules/users/pages/Useredit.js';
+import Composemail from './modules/users/pages/Composemail.js';
 // import Lazypage from './modules/users/pages/Lazypage';
 const Lazypage = lazy(()=>import("./modules/users/pages/Lazypage"));
 
@@ -49,6 +50,7 @@ root.render(
               </Route>
               <Route path='mediapage' element={<Abcd/>}></Route>
               <Route path='mui' element={<Muipage/>}></Route>
+              <Route path="ckeditor" ele={<Composemail/>}></Route>
             <Route path='*' element={<Errorpage/>}></Route>
 
             </Route>
