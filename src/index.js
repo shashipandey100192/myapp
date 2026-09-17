@@ -50,7 +50,7 @@ root.render(
               </Route>
               <Route path='mediapage' element={<Abcd/>}></Route>
               <Route path='mui' element={<Muipage/>}></Route>
-              <Route path="ckeditor" ele={<Composemail/>}></Route>
+              <Route path="ckeditor" element={<Composemail/>}></Route>
             <Route path='*' element={<Errorpage/>}></Route>
 
             </Route>
