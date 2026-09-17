@@ -50,7 +50,7 @@ function Alluserslist() {
                                 <th scope="col">Mobile</th>
                                 <th scope="col">salary</th>
                                 <th scope="col">hra</th>
-                                <th scope="col">pass</th>
+                                
                                 <th scope="col">Action</th>
                             </tr>
                         </thead>
@@ -66,7 +66,7 @@ function Alluserslist() {
                                         <td>{a.mobile}</td>
                                         <td>{a.salary}</td>
                                         <td>{a.hra}</td>
-                                        <td>{a.pass}</td>
+                                       
                                         <td>
                                             <Link to={"details/"+a._id} class="badge text-bg-primary">View</Link>
                                             <Link to={"edit/"+a._id} class="badge text-bg-warning ms-2">Edit</Link>
